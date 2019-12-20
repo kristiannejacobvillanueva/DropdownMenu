@@ -1,0 +1,129 @@
+<html>
+	<head>
+		<style>
+			.maintab, .subtab1, .subtab2, .subtab3, .subtab4
+				{
+					list-style: none;
+					padding: 0;
+					margin: 0;
+				}
+				
+			.maintab li
+				{
+					position: relative;
+					background: blue;
+					float: left;
+				}
+				
+			.maintab a
+				{
+					text-decoration: none;
+					display: block;
+					padding: 1em;
+					color: black;
+				}
+				
+			.maintab li:hover
+				{
+					background: cyan;
+				}
+				
+			.subtab1
+				{
+					display: none;
+					position: absolute;
+					width: 89px;
+				}
+				
+			.subtab2
+				{
+					display: none;
+					top: 0;
+					position: absolute;
+					left: 100%;
+					width: 101px;
+				}
+				
+			.subtab3
+				{
+					display: none;
+					top: 0;
+					position: absolute;
+					left: 100%;
+					width: 113px;
+				}
+				
+			.subtab4
+				{
+					display: none;
+					top: 0;
+					position: absolute;
+					left: 100%;
+					width: 125px;
+				}
+			
+			li:hover .subtab1
+				{
+					display: block;
+				}
+				
+			.subtab1 li:hover .subtab2
+				{
+					display: block;
+				}
+				
+			.subtab2 li:hover .subtab3
+				{
+					display: block;
+				}
+				
+			.subtab3 li:hover .subtab4
+				{
+					display: block;
+				}
+		</style>
+	</head>
+	<body>
+		<ul class="maintab">
+			<li><a href="#">Tab 1</a></li>
+			<li><a href="#">Tab 2</a></li>
+			<li><a href="#">Tab 3</a>
+				<ul class="subtab1">
+					<li><a href="#">Tab 3.1</a></li>
+					<li><a href="#">Tab 3.2</a></li>
+					<li><a href="#">Tab 3.3</a>
+						<ul class="subtab2">
+							<li><a href="#">Tab 3.3.1</a></li>
+							<li><a href="#">Tab 3.3.2</a></li>
+							<li><a href="#">Tab 3.3.3</a></li>
+							<li><a href="#">Tab 3.3.4</a>
+								<ul class="subtab3">
+									<li><a href="#">Tab 3.3.4.1</a></li>
+									<li><a href="#">Tab 3.3.4.2</a></li>
+									<li><a href="#">Tab 3.3.4.3</a></li>
+									<li><a href="#">Tab 3.3.4.4</a>
+										<ul class="subtab4">
+											<li><a href="#">Tab 3.3.4.4.1</a></li>
+											<li><a href="#">Tab 3.3.4.4.2</a></li>
+											<li><a href="#">Tab 3.3.4.4.3</a></li>
+											<li><a href="#">Tab 3.3.4.4.4</a></li>
+											<li><a href="#">Tab 3.3.4.4.5</a></li>
+										</ul>
+									</li>
+									<li><a href="#">Tab 3.3.4.5</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Tab 3.3.5</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Tab 3.4</a></li>
+					<li><a href="#">Tab 3.5</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Tab 4</a></li>
+			<li><a href="#">Tab 5</a></li>
+			<li><a href="#">Tab 6</a></li>
+			<li><a href="#">Tab 7</a></li>
+		</ul>
+	</body>
+</html>
